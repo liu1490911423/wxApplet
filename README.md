@@ -1,0 +1,2 @@
+# wxApplet
+applet authorization
