@@ -1,0 +1,20 @@
+{
+    "name": "hong/applet",
+    "description": "Third party applet docking",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liuhongxia",
+            "email": "1490911423@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sign\\": "lib/"
+        }
+    }
+}
