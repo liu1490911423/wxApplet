@@ -8,8 +8,6 @@
 
 namespace applet;
 
-use Predis\Client;
-
 class WxApplet
 {
 
@@ -60,10 +58,16 @@ class WxApplet
     {
         $this->appId = $config['applet_app_id'];
         $this->secret = $config['applet_app_secret'];
-        $this->accessToken = $this->getComponentAccessToken();
+
         $this->redis_url = $config['redis_url'];
 
-        $this->redis = new Client($this->redis_url);
+        $this->redis = new \Redis();
+        $this->redis->connect($config['ip'], $config['port']);
+        if (!empty($config['auth'])) {
+            $this->redis->auth($config['auth']); //密码验证
+        }
+        $this->accessToken = $this->getComponentAccessToken();
+
         if ($config['third_applet_app_id']) {
             $this->authorizerAppId = $config['third_applet_app_id'];
             $this->authorizerAccessToken = $this->getAuthorizerAccessToken($config['third_applet_app_id']);
