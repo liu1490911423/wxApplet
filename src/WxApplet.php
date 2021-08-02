@@ -58,8 +58,7 @@ class WxApplet
     {
         $this->appId = $config['applet_app_id'];
         $this->secret = $config['applet_app_secret'];
-
-        $this->redis_url = $config['redis_url'];
+        
 
         $this->redis = new \Redis();
         $this->redis->connect($config['ip'], $config['port']);
