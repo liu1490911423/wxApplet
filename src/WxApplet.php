@@ -6,7 +6,7 @@
  * Time: 16:07
  */
 
-namespace Applet;
+namespace applet;
 
 use Predis\Client;
 

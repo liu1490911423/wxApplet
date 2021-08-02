@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
-    'name' => 'hong/applet',
+    'reference' => '164fb14bf878a63d238c83b4f535fbaea5e3a5cb',
+    'name' => 'lldhong/applet',
   ),
   'versions' => 
   array (
-    'hong/applet' => 
+    'lldhong/applet' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '164fb14bf878a63d238c83b4f535fbaea5e3a5cb',
     ),
     'predis/predis' => 
     array (
