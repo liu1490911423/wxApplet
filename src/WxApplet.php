@@ -13,7 +13,7 @@ class WxApplet
 
     private $url = 'https://api.weixin.qq.com';
     private $authorizedConnection = 'https://mp.weixin.qq.com/cgi-bin/componentloginpage?';
-    private $redirect_uri = '/view/applets/publishApplet';//授权成功回调地址
+    private $redirect_uri = '';//授权成功回调地址(自定义)
     protected $appId;
     protected $secret;
     protected $cache;
